@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Study Group — CUNYStudy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="create">
+
+<nav>
+  <a class="nav-logo" href="index.html">CUNY<span>Study</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="hide-mobile">Home</a>
+    <a href="browse.html" class="hide-mobile">Browse Groups</a>
+    <a href="about.html" class="hide-mobile">About</a>
+    <a href="create.html" class="nav-cta active">+ Create Group</a>
+  </div>
+</nav>
+
+<div class="form-wrap">
+  <h1>Create a Study Group</h1>
+  <p class="subtitle">Fill in the details below. Your group will be live instantly for other students to find and join.</p>
+
+  <div class="form-card">
+    <form id="create-form">
+
+      <div class="form-section-title">Course Information</div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label for="course">Course Code *</label>
+          <input type="text" id="course" placeholder="e.g. CSC 226" required>
+          <div class="form-hint">Use the official code from the CUNY catalog.</div>
+        </div>
+        <div class="form-group">
+          <label for="courseName">Course Name *</label>
+          <input type="text" id="courseName" placeholder="e.g. Web Database Applications" required>
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label for="professor">Professor Name</label>
+          <input type="text" id="professor" placeholder="e.g. Prof. Tooker">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject Area</label>
+          <select id="subject">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Biology">Biology</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Psychology">Psychology</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Philosophy">Philosophy</option>
+            <option value="Business">Business</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <hr class="form-divider">
+      <div class="form-section-title">Campus &amp; Meeting Details</div>
+
+      <div class="form-group">
+        <label for="campus">Campus *</label>
+        <select id="campus" required>
+          <option value="">Select your campus</option>
+          <option value="College of Staten Island">College of Staten Island</option>
+          <option value="Baruch College">Baruch College</option>
+          <option value="Brooklyn College">Brooklyn College</option>
+          <option value="City College">City College</option>
+          <option value="Hunter College">Hunter College</option>
+          <option value="Queens College">Queens College</option>
+        </select>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label for="meetingType">Meeting Format</label>
+          <select id="meetingType">
+            <option value="In-Person">In-Person</option>
+            <option value="Online">Online</option>
+            <option value="Hybrid">Hybrid (Both)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Location / Zoom Link</label>
+          <input type="text" id="location" placeholder="e.g. Library Room 1L-116 or Zoom">
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label for="day">Day of Week</label>
+          <select id="day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time">Start Time</label>
+          <input type="text" id="time" placeholder="e.g. 3:00 PM">
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label for="maxMembers">Max Group Size</label>
+          <select id="maxMembers">
+            <option value="2">2 members</option>
+            <option value="3">3 members</option>
+            <option value="4">4 members</option>
+            <option value="5" selected>5 members</option>
+            <option value="6">6 members</option>
+            <option value="8">8 members</option>
+            <option value="10">10 members</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact">Your CUNY Email</label>
+          <input type="email" id="contact" placeholder="you@login.cuny.edu">
+          <div class="form-hint">This is how members will contact you.</div>
+        </div>
+      </div>
+
+      <hr class="form-divider">
+      <div class="form-section-title">About Your Group</div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="What will you be studying? Any specific topics, upcoming exams, or goals for the group?"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-lg">Create Group</button>
+        <button type="button" class="btn btn-outline" id="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a class="footer-logo" href="index.html">CUNY<span>Study</span></a>
+    <div class="footer-links">
+      <a href="browse.html">Browse Groups</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+  <div class="footer-inner"><p class="footer-copy">CUNYStudy &mdash; CSC 226 Final Project &middot; College of Staten Island &middot; Spring 2026</p></div>
+</footer>
+
+<div class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — CUNYStudy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="about">
+
+<nav>
+  <a class="nav-logo" href="index.html">CUNY<span>Study</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="hide-mobile">Home</a>
+    <a href="browse.html" class="hide-mobile">Browse Groups</a>
+    <a href="about.html" class="active hide-mobile">About</a>
+    <a href="create.html" class="nav-cta">+ Create Group</a>
+  </div>
+</nav>
+
+<div class="about-hero">
+  <h1>About <span>CUNYStudy</span></h1>
+  <p>We built this because we needed it. A study group finder made by CSI students, for CSI students.</p>
+</div>
+
+<div class="section">
+
+  <div class="section-head">
+    <h2>The Problem We Solved</h2>
+    <p>Why we built CUNYStudy instead of a generic class project.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>94% of CSI students commute</h3>
+      <p>Unlike residential campuses, students at the College of Staten Island come to class and go home. There are no dorms, no common rooms — and no easy way to find classmates who want to study together after class.</p>
+    </div>
+    <div class="about-card">
+      <h3>GroupMe is not a matchmaker</h3>
+      <p>Students use Discord and GroupMe to chat with people they already know. But there was no tool to connect students in the same class who have matching schedules and want to form a group. That is the gap CUNYStudy fills.</p>
+    </div>
+    <div class="about-card">
+      <h3>Study groups improve grades</h3>
+      <p>Research shows that students who participate in collaborative study groups score significantly higher on exams and assignments compared to students who study alone. We wanted to make that advantage accessible to every CUNY student.</p>
+    </div>
+    <div class="about-card">
+      <h3>No CUNY-specific tool existed</h3>
+      <p>We searched. There was nothing like this for CUNY students. GroupMe is just a chat app. Blackboard only shows students in your own section. We built the tool we wished existed — for every course, every campus.</p>
+    </div>
+  </div>
+
+  <div class="section-head" style="margin-top:72px;">
+    <h2>What We Built With</h2>
+    <p>Every technology covered in CSC 226 — Web Database Applications.</p>
+  </div>
+  <div class="tech-grid">
+    <div class="tech-card">
+      <h3>HTML5</h3>
+      <p>Semantic structure across all 5 pages. Forms, navigation, accessible markup, and meta viewport tags for every screen size.</p>
+    </div>
+    <div class="tech-card">
+      <h3>CSS3</h3>
+      <p>Custom design system with CSS variables, flexbox and grid layout, animations, hover effects, and full mobile responsiveness.</p>
+    </div>
+    <div class="tech-card">
+      <h3>JavaScript</h3>
+      <p>Dynamic rendering, localStorage database simulation, live search and filter, form validation, count-up animations, and DOM manipulation.</p>
+    </div>
+    <div class="tech-card">
+      <h3>SQL</h3>
+      <p>Full schema in database.sql &mdash; SELECT, INSERT, UPDATE, DELETE, LEFT JOIN with USING, LIKE, IN, BETWEEN, CASE WHEN, UNION, GROUP BY, and more.</p>
+    </div>
+  </div>
+
+  <div class="section-head" style="margin-top:72px;">
+    <h2>Pages &amp; Features</h2>
+    <p>Five pages, each with a clear purpose.</p>
+  </div>
+  <div style="background:#fff;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden;">
+    <table style="width:100%;border-collapse:collapse;">
+      <thead>
+        <tr style="background:var(--navy);">
+          <th style="padding:16px 24px;text-align:left;color:#fff;font-size:13px;font-weight:600;">Page</th>
+          <th style="padding:16px 24px;text-align:left;color:#fff;font-size:13px;font-weight:600;">Purpose</th>
+          <th style="padding:16px 24px;text-align:left;color:#fff;font-size:13px;font-weight:600;">Key Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border);"><td style="padding:16px 24px;font-weight:600;font-size:14px;">index.html</td><td style="padding:16px 24px;font-size:14px;color:var(--gray);">Home page</td><td style="padding:16px 24px;font-size:13px;color:var(--gray);">Hero search, live stats, featured groups, how it works, why CUNYStudy</td></tr>
+        <tr style="background:var(--light);border-bottom:1px solid var(--border);"><td style="padding:16px 24px;font-weight:600;font-size:14px;">browse.html</td><td style="padding:16px 24px;font-size:14px;color:var(--gray);">Browse all groups</td><td style="padding:16px 24px;font-size:13px;color:var(--gray);">Live search, 4 filter dropdowns, results count, instant updates</td></tr>
+        <tr style="border-bottom:1px solid var(--border);"><td style="padding:16px 24px;font-weight:600;font-size:14px;">create.html</td><td style="padding:16px 24px;font-size:14px;color:var(--gray);">Create a group</td><td style="padding:16px 24px;font-size:13px;color:var(--gray);">Full form with course, schedule, location, max size, contact, description</td></tr>
+        <tr style="background:var(--light);border-bottom:1px solid var(--border);"><td style="padding:16px 24px;font-weight:600;font-size:14px;">group.html</td><td style="padding:16px 24px;font-size:14px;color:var(--gray);">Group detail</td><td style="padding:16px 24px;font-size:13px;color:var(--gray);">Full info, member progress bar, join button, Open/Almost Full/Full status</td></tr>
+        <tr><td style="padding:16px 24px;font-weight:600;font-size:14px;">about.html</td><td style="padding:16px 24px;font-size:14px;color:var(--gray);">About the project</td><td style="padding:16px 24px;font-size:13px;color:var(--gray);">Problem statement, tech stack, pages overview, team info</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-head" style="margin-top:72px;">
+    <h2>The Team</h2>
+    <p>CSC 226 &mdash; Web Database Applications &middot; Prof. Tooker &middot; Spring 2026</p>
+  </div>
+  <div class="team-row">
+    <div class="team-card">
+      <div class="team-avatar">NS</div>
+      <h3>Njiru Sankar</h3>
+      <div class="role">Developer</div>
+      <p>Database design, SQL queries, JavaScript logic, browse and filter functionality.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">SM</div>
+      <h3>Steven Mai</h3>
+      <div class="role">Developer</div>
+      <p>UI design, CSS system, HTML pages, GitHub setup, and project presentation.</p>
+    </div>
+  </div>
+
+</div>
+
+<div style="background:var(--teal);padding:60px 48px;text-align:center;margin-top:0;">
+  <h2 style="font-family:'Syne',sans-serif;font-size:30px;color:var(--navy);margin-bottom:12px;">Ready to find your study group?</h2>
+  <p style="color:rgba(10,35,66,0.7);font-size:16px;margin-bottom:28px;">Browse groups for your class or create one in 60 seconds.</p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+    <a href="browse.html" class="btn btn-dark btn-lg">Browse Groups</a>
+    <a href="create.html" class="btn btn-ghost btn-lg" style="color:var(--navy);border-color:var(--navy);">Create a Group</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a class="footer-logo" href="index.html">CUNY<span>Study</span></a>
+    <div class="footer-links">
+      <a href="browse.html">Browse Groups</a>
+      <a href="create.html">Create Group</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+  <div class="footer-inner"><p class="footer-copy">CUNYStudy &mdash; CSC 226 Final Project &middot; College of Staten Island &middot; Spring 2026 &middot; Njiru Sankar & Steven Mai</p></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

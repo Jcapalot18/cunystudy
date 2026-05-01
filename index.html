@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUNYStudy — Find Your Study Group at CSI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+
+<nav>
+  <a class="nav-logo" href="index.html">CUNY<span>Study</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="active hide-mobile">Home</a>
+    <a href="browse.html" class="hide-mobile">Browse Groups</a>
+    <a href="about.html" class="hide-mobile">About</a>
+    <a href="create.html" class="nav-cta">+ Create Group</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-badge">Built for CUNY students at College of Staten Island</div>
+  <h1>Stop studying alone.<br><span>Find your crew.</span></h1>
+  <p>CUNYStudy connects commuter students with classmates in the same course — so you can study smarter, together.</p>
+  <form class="hero-search-wrap" id="hero-search-form">
+    <input type="text" id="hero-q" placeholder="Search by course code, professor, or subject...">
+    <button type="submit">Search</button>
+  </form>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="num" id="stat-groups">0</span><div class="lbl">Active Groups</div></div>
+    <div class="hero-stat"><span class="num" id="stat-students">0</span><div class="lbl">Students</div></div>
+    <div class="hero-stat"><span class="num" id="stat-courses">0</span><div class="lbl">Courses</div></div>
+  </div>
+</section>
+
+<div class="section">
+  <div class="section-head-row">
+    <div>
+      <h2>Active Study Groups</h2>
+      <p style="color:var(--gray);font-size:15px;margin-top:6px;">Recently posted groups looking for members</p>
+    </div>
+    <a href="browse.html" class="btn btn-outline btn-sm">View All</a>
+  </div>
+  <div class="cards-grid" id="featured-grid"></div>
+  <div style="text-align:center;margin-top:40px;">
+    <a href="browse.html" class="btn btn-dark btn-lg">Browse All Groups</a>
+  </div>
+</div>
+
+<div class="how-section">
+  <div style="max-width:1000px;margin:0 auto;text-align:center;">
+    <h2 style="font-family:'Syne',sans-serif;font-size:32px;color:#fff;margin-bottom:10px;">How it works</h2>
+    <p style="color:rgba(255,255,255,0.5);margin-bottom:52px;font-size:16px;">Three steps to never study alone again</p>
+    <div class="how-grid">
+      <div class="how-card"><div class="how-num">1</div><h3>Search</h3><p>Find a study group by course code, professor name, or subject. Filter by day, campus, and meeting type.</p></div>
+      <div class="how-card"><div class="how-num">2</div><h3>Join</h3><p>Click Join on any open group. You'll get the contact info to connect with your new study partners right away.</p></div>
+      <div class="how-card"><div class="how-num">3</div><h3>Study</h3><p>Meet up in-person, on Zoom, or hybrid — whatever works for your schedule. Ace your classes together.</p></div>
+      <div class="how-card"><div class="how-num">4</div><h3>Create</h3><p>Don't see a group for your class? Create one in 60 seconds. Set your schedule, location, and max size.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="max-width:1200px;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;" class="about-grid">
+    <div>
+      <h2 style="font-family:'Syne',sans-serif;font-size:32px;margin-bottom:16px;">Built for commuters.<br>Designed for CSI.</h2>
+      <p style="color:var(--gray);font-size:16px;line-height:1.8;margin-bottom:20px;">Over 94% of CSI students commute every day. Without dorms or common rooms, it is hard to find classmates to study with. CUNYStudy fills that gap.</p>
+      <p style="color:var(--gray);font-size:16px;line-height:1.8;margin-bottom:28px;">Research shows students in collaborative study groups score significantly higher. We built this because we needed it ourselves.</p>
+      <a href="about.html" class="btn btn-outline">Learn More</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div style="background:#fff;border-radius:14px;padding:24px;border:1px solid var(--border);box-shadow:var(--shadow-sm);"><h3 style="font-family:'Syne',sans-serif;font-size:16px;margin-bottom:6px;">94% Commuters</h3><p style="color:var(--gray);font-size:13px;line-height:1.6;">Most CSI students come and go. We help you connect before you leave campus.</p></div>
+      <div style="background:#fff;border-radius:14px;padding:24px;border:1px solid var(--border);box-shadow:var(--shadow-sm);"><h3 style="font-family:'Syne',sans-serif;font-size:16px;margin-bottom:6px;">Better Grades</h3><p style="color:var(--gray);font-size:13px;line-height:1.6;">Students in study groups perform significantly better on exams and assignments.</p></div>
+      <div style="background:#fff;border-radius:14px;padding:24px;border:1px solid var(--border);box-shadow:var(--shadow-sm);"><h3 style="font-family:'Syne',sans-serif;font-size:16px;margin-bottom:6px;">No Tool Like It</h3><p style="color:var(--gray);font-size:13px;line-height:1.6;">GroupMe and Discord help you chat. We help you find each other first.</p></div>
+      <div style="background:#fff;border-radius:14px;padding:24px;border:1px solid var(--border);box-shadow:var(--shadow-sm);"><h3 style="font-family:'Syne',sans-serif;font-size:16px;margin-bottom:6px;">100% Free</h3><p style="color:var(--gray);font-size:13px;line-height:1.6;">No accounts, no fees. Just find your people and start studying.</p></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--teal);padding:60px 48px;text-align:center;">
+  <h2 style="font-family:'Syne',sans-serif;font-size:32px;color:var(--navy);margin-bottom:12px;">Don't see a group for your class?</h2>
+  <p style="color:rgba(10,35,66,0.7);font-size:16px;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto;">Create one in 60 seconds and find your study partners before the next exam.</p>
+  <a href="create.html" class="btn btn-dark btn-lg">Create a Study Group</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a class="footer-logo" href="index.html">CUNY<span>Study</span></a>
+    <div class="footer-links">
+      <a href="browse.html">Browse Groups</a>
+      <a href="create.html">Create Group</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+  <div class="footer-inner"><p class="footer-copy">CUNYStudy &mdash; CSC 226 Final Project &middot; College of Staten Island &middot; Spring 2026 &middot; Njiru Sankar & Steven Mai</p></div>
+</footer>
+
+<div class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

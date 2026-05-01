@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Study Groups — CUNYStudy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="browse">
+
+<nav>
+  <a class="nav-logo" href="index.html">CUNY<span>Study</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="hide-mobile">Home</a>
+    <a href="browse.html" class="active hide-mobile">Browse Groups</a>
+    <a href="about.html" class="hide-mobile">About</a>
+    <a href="create.html" class="nav-cta">+ Create Group</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Browse Study Groups</h1>
+  <p>Find the right group for your class — filter by subject, campus, day, or meeting type.</p>
+  <div class="filters">
+    <select class="filter-select" id="filter-subject">
+      <option value="all">All Subjects</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Biology">Biology</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Psychology">Psychology</option>
+      <option value="English">English</option>
+      <option value="History">History</option>
+      <option value="Philosophy">Philosophy</option>
+      <option value="Business">Business</option>
+    </select>
+    <select class="filter-select" id="filter-campus">
+      <option value="all">All Campuses</option>
+      <option value="College of Staten Island">College of Staten Island</option>
+      <option value="Baruch College">Baruch College</option>
+      <option value="Brooklyn College">Brooklyn College</option>
+      <option value="City College">City College</option>
+      <option value="Hunter College">Hunter College</option>
+      <option value="Queens College">Queens College</option>
+    </select>
+    <select class="filter-select" id="filter-type">
+      <option value="all">Any Format</option>
+      <option value="In-Person">In-Person</option>
+      <option value="Online">Online</option>
+      <option value="Hybrid">Hybrid</option>
+    </select>
+    <select class="filter-select" id="filter-day">
+      <option value="all">Any Day</option>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+  </div>
+</div>
+
+<div class="browse-body">
+  <div class="search-row">
+    <input type="text" id="search-input" placeholder="Search by course code, professor, or keyword...">
+    <a href="create.html" class="btn btn-primary">+ New Group</a>
+  </div>
+  <div class="results-count" id="results-count"></div>
+  <div class="cards-grid" id="browse-grid"></div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a class="footer-logo" href="index.html">CUNY<span>Study</span></a>
+    <div class="footer-links">
+      <a href="browse.html">Browse Groups</a>
+      <a href="create.html">Create Group</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+  <div class="footer-inner"><p class="footer-copy">CUNYStudy &mdash; CSC 226 Final Project &middot; College of Staten Island &middot; Spring 2026</p></div>
+</footer>
+
+<div class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
